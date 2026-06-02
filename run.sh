@@ -5,7 +5,7 @@ set -e
 
 # Get absolute paths of directories
 ROOT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-BACKEND_DIR="$ROOT_DIR/Chatbot"
+BACKEND_DIR="$ROOT_DIR/Chatbot-backend"
 FRONTEND_DIR="$ROOT_DIR/Chatbot-frontend"
 
 # Export HF endpoint mirror for regional access

@@ -7,7 +7,7 @@ echo =============================================
 
 :: Get the directory of this script
 set "ROOT_DIR=%~dp0"
-set "BACKEND_DIR=%ROOT_DIR%Chatbot"
+set "BACKEND_DIR=%ROOT_DIR%Chatbot-backend"
 set "FRONTEND_DIR=%ROOT_DIR%Chatbot-frontend"
 
 :: Set HF endpoint mirror for regional access
