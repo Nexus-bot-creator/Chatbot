@@ -1,0 +1,23 @@
+:root{
+  --bg:#0f1720;--panel:#0b1220;--muted:#94a3b8;--accent:#60a5fa;--white:#e6eef8
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,Arial;background:var(--bg);color:var(--white)}
+.shell{max-width:900px;margin:0 auto;height:100vh;display:flex;flex-direction:column}
+.header{display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--panel)}
+.header button{margin-left:8px}
+.message-list{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:12px}
+.bubble{max-width:80%;padding:10px;border-radius:10px}
+.bubble.user{background:#2563eb;color:#fff;align-self:flex-end}
+.bubble.bot{background:#0b1220;border:1px solid #123;color:var(--white);align-self:flex-start}
+.bubble .meta{font-size:12px;color:var(--muted)}
+.input-bar{display:flex;gap:8px;padding:12px;background:var(--panel)}
+.input-bar textarea{flex:1;height:72px;padding:8px;border-radius:6px;border:1px solid #223;background:#071022;color:var(--white)}
+.input-controls{display:flex;flex-direction:column;align-items:flex-end}
+.counter{font-size:12px;color:var(--muted);margin-bottom:6px}
+.offline{background:#7f1d1d;padding:8px;text-align:center}
+.bubble-foot{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:8px}
+.loader{margin-left:8px}
+.retry{background:transparent;color:var(--accent);border:0}
+
+@media (max-width:600px){.shell{height:100vh;padding:0}}
